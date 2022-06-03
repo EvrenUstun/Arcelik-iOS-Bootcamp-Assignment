@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week_2_EvrenUstun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite F1 driver &amp; Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYN-w4-po5">
+                                <rect key="frame" x="49" y="88" width="316" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="F1 Driver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVM-6c-Wbs">
+                                <rect key="frame" x="129" y="212" width="157" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="YAc-Ig-sX7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH2-k3-Oux">
+                                <rect key="frame" x="99" y="298" width="216" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FGO-LF-Nz4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here to Choose">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="73w-k7-pCd" kind="show" identifier="driverSegue" id="dVn-NE-WFw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="F1 Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL1-i4-SvT">
+                                <rect key="frame" x="129" y="419" width="157" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="m4c-Vr-cN7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZi-SQ-1FG">
+                                <rect key="frame" x="99" y="505" width="216" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="zVi-2s-rdd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here to Choose">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="73w-k7-pCd" kind="show" identifier="teamSegue" id="2Kt-5B-a89"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OL1-i4-SvT" firstAttribute="top" secondItem="XH2-k3-Oux" secondAttribute="bottom" constant="87" id="0YE-xU-9wi"/>
+                            <constraint firstItem="yZi-SQ-1FG" firstAttribute="top" secondItem="OL1-i4-SvT" secondAttribute="bottom" constant="47" id="5jd-dH-JHI"/>
+                            <constraint firstItem="EVM-6c-Wbs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="6aL-Vv-Byd"/>
+                            <constraint firstItem="EVM-6c-Wbs" firstAttribute="top" secondItem="bYN-w4-po5" secondAttribute="bottom" constant="52" id="AY8-im-zal"/>
+                            <constraint firstItem="XH2-k3-Oux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="BDk-Ur-kAe"/>
+                            <constraint firstItem="XH2-k3-Oux" firstAttribute="top" secondItem="EVM-6c-Wbs" secondAttribute="bottom" constant="47" id="CNh-u1-fJ9"/>
+                            <constraint firstItem="XH2-k3-Oux" firstAttribute="trailing" secondItem="yZi-SQ-1FG" secondAttribute="trailing" id="DzI-Xm-M06"/>
+                            <constraint firstItem="EVM-6c-Wbs" firstAttribute="centerX" secondItem="XH2-k3-Oux" secondAttribute="centerX" id="Njt-et-hLS"/>
+                            <constraint firstItem="bYN-w4-po5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Pob-Br-JSh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yZi-SQ-1FG" secondAttribute="bottom" constant="323" id="QRw-W7-bE3"/>
+                            <constraint firstItem="bYN-w4-po5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="Qo1-CK-tiy"/>
+                            <constraint firstItem="EVM-6c-Wbs" firstAttribute="trailing" secondItem="OL1-i4-SvT" secondAttribute="trailing" id="b1f-sv-eay"/>
+                            <constraint firstItem="EVM-6c-Wbs" firstAttribute="leading" secondItem="OL1-i4-SvT" secondAttribute="leading" id="dVq-zs-3VU"/>
+                            <constraint firstItem="XH2-k3-Oux" firstAttribute="leading" secondItem="yZi-SQ-1FG" secondAttribute="leading" id="eoV-Uq-YUM"/>
+                            <constraint firstItem="bYN-w4-po5" firstAttribute="centerX" secondItem="EVM-6c-Wbs" secondAttribute="centerX" id="jJp-hC-W25"/>
+                            <constraint firstItem="bYN-w4-po5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rfb-tQ-RnN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9bR-Ri-z5h"/>
+                    <connections>
+                        <outlet property="chooseDriverButton" destination="XH2-k3-Oux" id="00T-ii-4j3"/>
+                        <outlet property="chooseTeamButton" destination="yZi-SQ-1FG" id="32a-fJ-Atp"/>
+                        <outlet property="driverLabel" destination="EVM-6c-Wbs" id="hWo-RE-K4d"/>
+                        <outlet property="teamLabel" destination="OL1-i4-SvT" id="nYQ-L5-j5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="80"/>
+        </scene>
+        <!--Selection Table View Controller-->
+        <scene sceneID="iLO-9J-R5m">
+            <objects>
+                <tableViewController id="Gi5-gO-jzy" customClass="SelectionTableViewController" customModule="week_2_EvrenUstun" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="h3y-xf-rfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResuableCell" id="hlW-uH-5rq">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ResuableCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hlW-uH-5rq" id="edg-mA-vTd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gi5-gO-jzy" id="pyP-hK-W5l"/>
+                            <outlet property="delegate" destination="Gi5-gO-jzy" id="WwJ-kK-mXl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="saM-H3-LWk">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="rD0-FY-qCl">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="Gi5-gO-jzy" id="9mf-JQ-mdX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icg-CM-EdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZeP-En-L3g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" interfaceStyle="light" id="73w-k7-pCd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dF7-wO-jn8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3o-c7-Bb0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Apf-kZ-PTx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Gi5-gO-jzy" kind="relationship" relationship="rootViewController" id="OP9-fe-uaq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpL-xX-TMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="80"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Kt-5B-a89"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
